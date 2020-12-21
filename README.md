@@ -32,14 +32,22 @@
 </pre>
 </details>
 
-1. قارن 
-2. الخطوة الثانية
-...
-...
 
+لجعل الزر يأخذ حجم الشاشة، استعمل هذا الكود 
 
 <div dir="ltr">
-  
+
+```Swift
+  Text("Sign in")
+    .padding()
+    .frame(minWidth: 0, idealWidth: 100, maxWidth: .infinity)
+    .foregroundColor(.white)
+    .background(Color.green)
+    .clipShape(RoundedRectangle(cornerRadius: 6))
+
+```
+
+
 </div>
 
 
